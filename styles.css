@@ -64,6 +64,54 @@ body {
 /* Header Styles */
 .header {
     text-align: center;
+    position: relative;
+}
+
+.header-content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.refresh-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--card-border);
+    color: var(--text-muted);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.refresh-btn svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.refresh-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--text-main);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.refresh-btn:hover svg {
+    transform: rotate(180deg);
+}
+
+.refresh-btn:active {
+    transform: translateY(-50%) scale(0.95);
 }
 
 .avatar {

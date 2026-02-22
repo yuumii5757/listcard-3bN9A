@@ -21,29 +21,44 @@
 <body>
     <div class="bg-animation"></div>
     <main class="container">
-        <header class="header">
+        <div class="header-content">
             <div class="avatar">
                 <img src="icon.svg" alt="Lang App" width="100" height="100" style="border-radius: 22px;">
             </div>
             <h1>Language Cards</h1>
             <p>Flashcard apps for language learners</p>
-        </header>
+            <button class="refresh-btn" onclick="window.location.reload(true)" aria-label="Refresh page">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 2v6h-6"></path>
+                    <path d="M3 12a9 9 0 1 0 2.6-6.4L21 8"></path>
+                    <path d="M3 2v6h6"></path>
+                    <path d="M21 12a9 9 0 1 0-2.6 6.4L3 16"></path>
+                </svg>
+            </button>
+        </div>
 
         <div class="links-wrapper">
             <!-- 英語 -->
-            <a href="https://yuumii5757.github.io/engcard-x7k9m2/" class="link-card" target="_self">
+            <a href="/engcard-x7k9m2/" class="link-card" target="_self">
                 <span class="icon">🇺🇸</span>
                 <span class="title">英語 (English)</span>
             </a>
 
+            <!-- 韓国語 -->
+            <a href="/korcard-3bN9A/" class="link-card" target="_self">
+                <span class="icon">🇰🇷</span>
+                <span class="title">韓国語 (Korean)</span>
+            </a>
+
             <!-- タイ語 -->
-            <a href="https://yuumii5757.github.io/thaicard-B2mPq/" class="link-card" target="_self">
+            <a href="/thaicard-B2mPq/" class="link-card" target="_self">
                 <span class="icon">🇹🇭</span>
                 <span class="title">タイ語 (Thai)</span>
             </a>
 
             <!-- 広東語 -->
-            <a href="https://yuumii5757.github.io/zhhcard-rT8pW/" class="link-card" target="_self">
+            <a href="/zhhcard-rT8pW/" class="link-card" target="_self">
                 <span class="icon">🇭🇰</span>
                 <span class="title">広東語 (Cantonese)</span>
             </a>
@@ -52,12 +67,6 @@
             <div class="link-card disabled">
                 <span class="icon">🇨🇳</span>
                 <span class="title">中国語 (Chinese) <span class="badge">未設定</span></span>
-            </div>
-
-            <!-- 韓国語 (未設定) -->
-            <div class="link-card disabled">
-                <span class="icon">🇰🇷</span>
-                <span class="title">韓国語 (Korean) <span class="badge">未設定</span></span>
             </div>
         </div>
     </main>
